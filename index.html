@@ -1,0 +1,51 @@
+<meta charset="UTF-8" />
+<div class="header">
+  <h1>Tic Tac @ Ashish</h1>
+</div>
+
+<body>
+  <div class="parentTop">
+    <div class="gridTop">
+      <div id="grid"></div>
+    </div>
+  </div>
+  <div class="gameEventModal">
+    <div class="gameEventModalContent">
+      Player Name
+      <input
+        id="playerName"
+        type="text"
+        autocomplete="off"
+        placeholder="Enter your name"
+      />
+    </div>
+    <div class="gameEventModalContent">
+      Grid Size
+      <input
+        id="gridSize"
+        type="text"
+        autocomplete="off"
+        placeholder="Eg:Input 3 for 3x3 board"
+      />
+    </div>
+    <div class="gameEventModalContent">
+      <button onclick="setDifficulty(1);changeName()">Easy</button>
+      <button onclick="setDifficulty(2);changeName()">Medium</button>
+      <button onclick="setDifficulty(3);changeName()">Skynet</button>
+      <div class="playButton">
+        <button onclick="callMe()" id="playButton">Quick Game</button>
+      </div>
+    </div>
+  </div>
+  <div class="winnerModal">
+    <div class="winnerModalContent"></div>
+  </div>
+  <div class="gameEventModal" style="display: none" id="loaderId">
+    <div class="gameEventModalContent">
+      Computer is thinking....
+      <div class="loader"></div>
+    </div>
+  </div>
+  <script type="text/javascript" src="./index.js"></script>
+  <link rel="stylesheet" href="./index.css" />
+</body>

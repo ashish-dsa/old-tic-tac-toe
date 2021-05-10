@@ -1,0 +1,148 @@
+.parentTop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gridTop {
+    border-color: "#f44336";
+    border: '1px solid red';
+    display: flex;
+    flex-direction: column;
+}
+
+.lightBackground {
+    background-color: 00FFFF
+}
+
+.columnsStyle {
+    display: flex;
+    flex-direction: column;
+}
+
+.rowStyle {
+    display: flex;
+}
+
+.darkBackground {
+    background-color: F0FFFF
+}
+
+.box {
+    width: 150;
+    height: 150;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.cross {
+    color: #f90;
+    font-size: 2.5em;
+    border-radius: 5px;
+    line-height: 100px;
+}
+
+.playButton {
+    text-align: center;
+    left: 50%;
+    padding-top: 30px;
+}
+
+.gameEventModal {
+    display: block;
+    z-index: 1;
+    text-align: center;
+    padding-top: 20%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.gameEventModalContent {
+    background-color: white;
+    margin: auto;
+    padding: 20px;
+    border: none;
+    width: 30%;
+}
+
+.winnerModal{
+    display: none;
+    z-index: 1;
+    text-align: center;
+    padding-top: 20%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.winnerModalContent{
+    background-color: white;
+    margin: auto;
+    padding: 20px;
+    border: none;
+    width: 30%;
+}
+
+button {
+    background: rgb(106, 26, 171);
+    color: white;
+    font-size: 100%;
+    border: none;
+    position: relative;
+    height: 10%;
+    width: 30%;
+    cursor: pointer;
+    transition: 800ms ease all;
+    outline: none;
+}
+
+button:hover {
+    background: white;
+    color: rgb(77, 26, 171);
+}
+
+.loader {
+    display: block;
+    z-index: 1;
+    text-align: center;
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    opacity: .5;
+    animation: spin 2s linear infinite;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
