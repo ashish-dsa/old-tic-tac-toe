@@ -84,11 +84,12 @@ function renderMainGrid() {
 }
 
 //CODE_DEBT: Will reduce size if I get time
-function onBoxClick() {
+async function onBoxClick() {
   let rowIdx = this.getAttribute("rowIdx");
   let colIdx = this.getAttribute("colIdx");
   if (grid[colIdx][rowIdx] == 0) {
     disableScreen();
+    await new Promise((resolve) => setTimeout(resolve, 100));
     let result = false;
     let newValue;
     let winner = "";
