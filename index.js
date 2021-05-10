@@ -162,12 +162,12 @@ function showGameModal(winner) {
     winnerModalContent.innerHTML = "It's a Draw";
     winnerModal.style.display = "block";
   }
-  //   setTimeout(() => {
-  //     winnerModal.style.display = "none";
-  //     document.getElementsByClassName("gameEventModal")[0].style.display =
-  //       "block";
-  //     var currentGrid = (document.getElementById("grid").innerHTML = "");
-  //   }, 1500);
+  setTimeout(() => {
+    winnerModal.style.display = "none";
+    document.getElementsByClassName("gameEventModal")[0].style.display =
+      "block";
+    var currentGrid = (document.getElementById("grid").innerHTML = "");
+  }, 1500);
 }
 
 function addClickHandlers() {
